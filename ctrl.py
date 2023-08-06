@@ -4,9 +4,12 @@ class Control :
         self.view = view
         self.connectSignals()
     
-    def calculatoe(self):
+    def calculate(self):
         pass
        
     def connectSignals(self):
         self.view.btn1.clicked.connect(self.view.activateMessage)
         self.view.btn2.clicked.connect(self.view.clearMessage)
+    
+    def sum(self, a, b):
+        return a+b
